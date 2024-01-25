@@ -1,0 +1,248 @@
+<div class="d-flex justify-content-between flex-wrap flex-md nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2">Employee</h1>
+  <div class="btn-toolbar mb-2 mb-md 0">
+    <div class="btn-group me-2">
+      <button class="btn btn-sm btn-outline-secondary">?</button>
+    </div>
+  </div>
+</div>
+
+<div class="col py-3">
+  <div class="row">
+    <div class="col">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+          <li class="breadcrumb-item active">New Customer</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="col text-end fw-lighter">
+      <b>UserId</b>
+    </div>
+  </div>
+
+</div>
+
+
+<form action="/add" method="POST" enctype="multipart/form-data">
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName" name="firstName" value="" placeholder="First Name"
+        required>
+    </div>
+
+    <div class="col">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName" name="lastName" value="" placeholder="Last Name">
+    </div>
+    <div class="col">
+      <label for="image">Image</label>
+      <input type="file" class="form-control " id="image" name="image">
+    </div>
+  </div>
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="tel">Telephone</label>
+      <input type="text" class="form-control" id="tel" name="tel" value="" placeholder="Telephone">
+    </div>
+
+    <div class="col">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" name="email" value="" placeholder="Email" required>
+    </div>
+  </div>
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="dob">Date of birth</label>
+      <input type="date" class="form-control" id="dob" name="dob" value="" placeholder="Date of birth">
+    </div>
+
+    <div class="col">
+      <label for="email">Department</label>
+      <input type="text" class="form-control" id="Department" name="Department" value="" placeholder="Department">
+    </div>
+  </div>
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="empno">Employee Number</label>
+      <input type="text" class="form-control" id="empno" name="empno" value="" placeholder="Employee Number">
+    </div>
+
+    <div class="col">
+      <label for="porc">Employment Type</label>
+      <select class="form-control" id="porc" name="porc">
+        <option value="Select">Select</option>
+        <option value="permanent">Permanent</option>
+        <option value="contract">Contract</option>
+      </select>
+    </div>
+
+    <div class="col">
+      <label for="status">Employee Status</label>
+      <select class="form-control" id="status" name="status">
+        <option value="Select">Select</option>
+        <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+      </select>
+    </div>
+
+  </div>
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="designation">Designation</label>
+      <input type="text" class="form-control" id="designation" name="designation" value="" placeholder="Designation">
+    </div>
+
+    <div class="col">
+      <label for="qualification">Qualification</label>
+      <input type="text" class="form-control" id="qualification" name="qualification" value=""
+        placeholder="Qualification">
+    </div>
+  </div>
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="yog">Year of Graduation</label>
+      <input type="date" class="form-control" id="yog" name="yog" value="" placeholder="Year of Graduation">
+    </div>
+
+    <div class="col">
+      <label for="doj">Date of Joining</label>
+      <input type="date" class="form-control" id="doj" name="doj" value="" placeholder="Date of joining">
+    </div>
+  </div>
+
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="aadharno">Aadhar Number</label>
+      <input type="text" class="form-control" id="aadharno" name="aadharno" placeholder="Aadhar Number">
+    </div>
+
+    <div class="col">
+      <label for="panno">PAN Number</label>
+      <input type="text" class="form-control" id="panno" name="panno" placeholder="PAN Number">
+    </div>
+  </div>
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="vanno">VAN Number</label>
+      <input type="text" class="form-control" id="vanno" name="vanno" placeholder="VAN Number">
+    </div>
+
+    <div class="col">
+      <label for="pfno">PF Number</label>
+      <input type="text" class="form-control" id="pfno" name="pfno" placeholder="PF Number">
+    </div>
+  </div>
+
+
+  <div class="form-group mb-4">
+    <label for="address">Address</label>
+    <textarea class="form-control" name="address" id="address" cols="30" rows="2" placeholder="Address"></textarea>
+  </div>
+
+  <div class="form-group mb-4">
+    <label for="remarks">Remarks</label>
+    <textarea class="form-control" name="remarks" id="remarks" cols="30" rows="2" placeholder="Remarks"></textarea>
+  </div>
+
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="prevexp">Previous Experience</label>
+      <input type="text" class="form-control" id="prevexp" name="prevexp" placeholder="Previous Experience">
+    </div>
+
+    <div class="col">
+      <label for="arrisexp">Arris Experience</label>
+      <input type="text" class="form-control" id="arrisexp" name="arrisexp" placeholder="arrisexp">
+    </div>
+    <div class="col">
+      <label for="totexp">Total Experience</label>
+      <input type="text" class="form-control" id="totexp" name="totexp" placeholder="Total Experience">
+    </div>
+  </div>
+
+
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="prevcompname">Preious Company Name</label>
+      <input type="text" class="form-control" id="prevcompname" name="prevcompname" placeholder="prevcompname">
+    </div>
+
+    <div class="col">
+      <label for="accno">Account Number</label>
+      <input type="text" class="form-control" id="accno" name="accno" placeholder="Account Nmuber">
+    </div>
+  </div>
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="ifsc">IFSC Code</label>
+      <input type="text" class="form-control" id="ifsc" name="ifsc" placeholder="IFSC Code">
+    </div>
+
+    <div class="col">
+      <label for="bankname">Bank Name</label>
+      <input type="text" class="form-control" id="bankname" name="bankname" placeholder="Bank Name">
+    </div>
+  </div>
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="bankid">Bank ID</label>
+      <input type="text" class="form-control" id="bankid" name="bankid" placeholder="Bank ID">
+    </div>
+
+    <div class="col">
+      <label for="dlname">Discipline Lead Name</label>
+      <input type="text" class="form-control" id="dlname" name="dlname" placeholder="DL Name">
+    </div>
+  </div>
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="dlemail">Discipline Lead Email</label>
+      <input type="text" class="form-control" id="dlemail" name="dlemail" placeholder="Example@gmail.com">
+    </div>
+
+    <div class="col">
+      <label for="dlph">Discipline Lead Phone Number</label>
+      <input type="text" class="form-control" id="dlph" name="dlph" placeholder="DL Phone Number">
+    </div>
+  </div>
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="ecpname">Emergency Contact Person Name</label>
+      <input type="text" class="form-control" id="ecpname" name="ecpname" placeholder="Name">
+    </div>
+
+    <div class="col">
+      <label for="ecpnumber">Emergency Contact Number</label>
+      <input type="text" class="form-control" id="ecpnumber" name="ecpnumber" placeholder="PH Number">
+    </div>
+  </div>
+
+
+  <div class="form-group mb-4">
+    <label for="details">Customer Details</label>
+    <textarea class="form-control" name="details" id="details" cols="30" rows="12"
+      placeholder="Customer Details"></textarea>
+  </div>
+
+  <div class="form-group mb-4">
+    <button type="submit" class="btn btn-primary">Add Customer</button>
+  </div>
+
+
+
+</form>

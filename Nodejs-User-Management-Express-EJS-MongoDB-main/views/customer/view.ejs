@@ -1,0 +1,349 @@
+<div class="d-flex justify-content-between flex-wrap flex-md nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2">
+    <%= customer.firstName %>
+      <%= customer.lastName %>
+
+
+  </h1>
+
+  <div class="btn-toolbar mb-2 mb-md 0">
+    <div class="btn-group me-2">
+      <button type="button" class="btn btn-sm btn-outline-secondary">Arris</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary">Employee Details</button>
+    </div>
+  </div>
+</div>
+
+<div class="col py-3">
+
+  <div class="row">
+    <div class="col">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+          <li class="breadcrumb-item active">
+            <%= customer.firstName %>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="col text-end fw-lighter">
+      <b>Last Updated <%= new Date(customer.updatedAt).toUTCString() %> </b>
+      <b>UserId:</b>
+      <%= customer._id %>
+    </div>
+  </div>
+
+</div>
+
+<ul class="list-group">
+
+
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Name:</b></div>
+      <div class="col">
+        <%= customer.firstName %>
+          <%= customer.lastName %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Tel:</b></div>
+      <div class="col">
+        <%= customer.tel %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Email:</b></div>
+      <div class="col">
+        <%= customer.email %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Date of birth:</b></div>
+      <div class="col">
+        <%= customer.dob%>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Department:</b></div>
+      <div class="col">
+        <%= customer.Department %>
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Employee Number:</b></div>
+      <div class="col">
+        <%= customer.empno%>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Employment Type:</b></div>
+      <div class="col">
+        <%= customer.porc%>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Designation:</b></div>
+      <div class="col">
+        <%= customer.designation %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Qualification:</b></div>
+      <div class="col">
+        <%= customer.qualification %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Year of Graduation</b></div>
+      <div class="col">
+        <%= customer.yog %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Date of Joining:</b></div>
+      <div class="col">
+        <%= customer.doj %>
+      </div>
+    </div>
+  </li>
+
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Aadhar Number</b></div>
+      <div class="col">
+        <%= customer.aadharno %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>PAN Number</b></div>
+      <div class="col">
+        <%= customer.panno%>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>VAN Number</b></div>
+      <div class="col">
+        <%= customer.vanno%>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>PF Number</b></div>
+      <div class="col">
+        <%= customer.pfno%>
+      </div>
+    </div>
+  </li>
+
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Address:</b></div>
+      <div class="col">
+        <%= customer.address %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Remarks:</b></div>
+      <div class="col">
+        <%= customer.remarks %>
+      </div>
+    </div>
+  </li>
+
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Previous Experience</b></div>
+      <div class="col">
+        <%= customer.prevexp %>
+      </div>
+    </div>
+  </li>
+
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Arris Experience</b></div>
+      <div class="col">
+        <%= customer.arrisexp %>
+      </div>
+    </div>
+  </li>
+
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Total Experience</b></div>
+      <div class="col">
+        <%= customer.totexp %>
+      </div>
+    </div>
+  </li>
+
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Previous Company Name</b></div>
+      <div class="col">
+        <%= customer.prevcompname %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Account Number</b></div>
+      <div class="col">
+        <%= customer.accno %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>IFSC Code</b></div>
+      <div class="col">
+        <%= customer.ifsc %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Bank Name</b></div>
+      <div class="col">
+        <%= customer.bankname %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Bank id</b></div>
+      <div class="col">
+        <%= customer.bankid %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Discipline Lead Name</b></div>
+      <div class="col">
+        <%= customer.dlname %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Discipline Lead Email</b></div>
+      <div class="col">
+        <%= customer.dlemail %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Discipline Lead Phone Number</b></div>
+      <div class="col">
+        <%= customer.dlph %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Emergency Contact Person Name</b></div>
+      <div class="col">
+        <%= customer.ecpname %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Emergency Contact Number</b></div>
+      <div class="col">
+        <%= customer.ecpnumber %>
+      </div>
+    </div>
+  </li>
+
+
+
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Details:</b></div>
+      <div class="col">
+        <%= customer.details %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Automated | Date Created:</b></div>
+      <div class="col">
+        <%= customer.createdAt %>
+      </div>
+    </div>
+  </li>
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col" style="max-width: 140px"> <b>Automated | Date Modified:</b></div>
+      <div class="col">
+        <%= customer.updatedAt %>
+      </div>
+    </div>
+  </li>
+
+</ul>

@@ -1,0 +1,103 @@
+<!-- login.ejs -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6bY/i9Z6n5D9EMOJ2u8p/EHcM1QE" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.16.0/font/bootstrap-icons.css">
+
+<style>
+    #ram {
+        display: none;
+    }
+
+    body {
+        background-color: #ffffff;
+        /* Light shade of orange */
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .login-container {
+        max-width: 400px;
+        width: 100%;
+        background-color: #fed6a5;
+        /* Orange color */
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: black;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        color: black;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 12px;
+        /* Adjusted padding for a more even size */
+        box-sizing: border-box;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        /* Slightly increased border-radius */
+    }
+
+    .btn {
+        background-color: #fff;
+        color: #ff8c00;
+        /* Orange color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        /* Slightly increased font size */
+        width: 100%;
+    }
+
+    .btn:hover {
+        background-color: #e0e0e0;
+    }
+</style>
+
+<div class="container">
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <form action="/login" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" name="password" required>
+            </div>
+
+            <button type="submit" class="btn">
+                <i class="bi bi-door-open"></i> Login
+            </button>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-XsDOm9rQaLhoS9L7znU6pxeyUJYZbvJJGdWf+0ddoH6Zw7qPO8c9sQQpnrtU3eNl"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy6bY/i9Z6n5D9EMOJ2u8p/EHcM1QE" crossorigin="anonymous"></script>

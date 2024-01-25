@@ -1,0 +1,24 @@
+<!-- views/customer/confirm-delete.ejs -->
+
+
+
+<div class="container mt-4">
+    <h2>Confirm Deletion</h2>
+
+    <p>Are you sure you want to delete the customer with the following details?</p>
+
+    <dl class="row">
+        <dt class="col-sm-3">Name:</dt>
+        <dd class="col-sm-9">
+            <%= customer.firstName %>
+                <%= customer.lastName %>
+        </dd>
+
+        <!-- Add other details as needed -->
+    </dl>
+
+    <form method="post" action="/confirm-delete/<%= customer._id %>">
+        <button type="submit" class="btn btn-danger">Confirm Deletion</button>
+        <a href="/" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
